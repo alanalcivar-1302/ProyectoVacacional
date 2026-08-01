@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://7ulm4jipls7l"]
+
+[ext_resource type="Script" uid="uid://c81w4pnha72k8" path="res://scripts/game.gd" id="1_uwrxv"]
+
+[node name="Game" type="Node2D" unique_id=1856165551]
+script = ExtResource("1_uwrxv")
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=960903943]
+
+[node name="Mesa" type="Node2D" parent="." unique_id=331982325]
+position = Vector2(11, 6)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=599725568]
+
+[node name="Jugador" type="Node2D" parent="." unique_id=849974471]
+position = Vector2(150, 600)
+
+[node name="CPU" type="Node2D" parent="." unique_id=216308675]
+position = Vector2(150, 120)
