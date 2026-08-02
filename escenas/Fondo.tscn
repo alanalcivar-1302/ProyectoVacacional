@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cvm7x8ancgumy"]
+
+[ext_resource type="Script" uid="uid://o4nxsxb07gfx" path="res://scripts/Fondo.gd" id="1_1h7j4"]
+
+[node name="Fondo" type="Node2D" unique_id=452944440]
+script = ExtResource("1_1h7j4")
+
+[node name="mono" type="Control" parent="." unique_id=286314159]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 179.0
+offset_top = 171.0
+offset_right = 219.0
+offset_bottom = 211.0
+
+[node name="Control2" type="Control" parent="." unique_id=1435833420]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 843.0
+offset_top = 316.0
+offset_right = 883.0
+offset_bottom = 356.0
