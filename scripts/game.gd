@@ -1,5 +1,5 @@
 extends Node2D
-
+@export var separacion_cartas := 170
 const CARD = preload("res://scenes/card.tscn")
 
 var imagenes = [
@@ -29,9 +29,11 @@ func crear_cartas():
 		
 		carta.frente = imagenes[i]
 		
-		$Jugador.add_child(carta)
+		$Jugador/Cartas.add_child(carta)
+		carta.scale = Vector2(0.4,0.4)
+		var inicio = $Jugador/PuntoInicial.position
 		
-		carta.position = Vector2(i * 170,0)
+		carta.position = inicio + Vector2(i * separacion_cartas ,0)
 		
 		mano_jugador.append(carta)
 		
@@ -45,8 +47,21 @@ func crear_cartas_cpu():
 		
 		carta.frente = imagenes[i]
 		
-		$CPU.add_child(carta)
-
-		carta.position = Vector2(i * 170,0)
+		$CPU/Cartas.add_child(carta)
+		carta.scale = Vector2(0.4,0.4)
+		var inicio = $CPU/PuntoInicial.position
+		carta.position = inicio + Vector2(i * separacion_cartas,0)
 
 		mano_cpu.append(carta)
+		
+func mover_carta_jugador(carta):
+
+	carta.reparent($Mesa)
+
+	carta.global_position = $Mesa/PosCartaJugador.global_position
+
+func mover_carta_cpu(carta):
+
+	carta.reparent($Mesa)
+
+	carta.global_position = $Mesa/PosCartaCPU.global_position
