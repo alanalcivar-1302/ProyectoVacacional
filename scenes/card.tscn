@@ -2,9 +2,14 @@
 
 [ext_resource type="Script" uid="uid://nyoqh0chjknw" path="res://scripts/card.gd" id="1_d81rb"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
+size = Vector2(19.5, 8)
+
 [node name="Card" type="Area2D" unique_id=112455064]
 script = ExtResource("1_d81rb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1904625539]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1868549149]
+position = Vector2(11.25, 15)
+shape = SubResource("RectangleShape2D_yqjtg")

@@ -11,8 +11,10 @@ script = ExtResource("1_uwrxv")
 position = Vector2(11, 6)
 
 [node name="PorCartaJugador" type="Marker2D" parent="Mesa" unique_id=1550877973]
+position = Vector2(269, 269)
 
 [node name="PosCartaCPU" type="Marker2D" parent="Mesa" unique_id=2047657616]
+position = Vector2(77, 274)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=599725568]
 
