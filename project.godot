@@ -11,12 +11,11 @@ config_version=5
 [application]
 
 config/name="Juego"
- HEAD
 run/main_scene="uid://7ulm4jipls7l"
-
- alejo
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
+HEADrun/main_scene="uid://7ulm4jipls7l"
+alejoconfig/features=PackedStringArray("4.7", "Forward Plus")
 
 [display]
 

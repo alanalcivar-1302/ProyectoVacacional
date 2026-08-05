@@ -8,7 +8,6 @@ script = ExtResource("1_uwrxv")
 [node name="Fondo" type="Sprite2D" parent="." unique_id=960903943]
 
 [node name="Mesa" type="Node2D" parent="." unique_id=331982325]
-position = Vector2(11, 6)
 
 [node name="PorCartaJugador" type="Marker2D" parent="Mesa" unique_id=1550877973]
 position = Vector2(269, 269)
