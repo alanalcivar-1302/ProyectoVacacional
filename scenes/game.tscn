@@ -10,23 +10,25 @@ script = ExtResource("1_uwrxv")
 [node name="Mesa" type="Node2D" parent="." unique_id=331982325]
 
 [node name="PorCartaJugador" type="Marker2D" parent="Mesa" unique_id=1550877973]
-position = Vector2(269, 269)
+position = Vector2(-119, -66)
 
 [node name="PosCartaCPU" type="Marker2D" parent="Mesa" unique_id=2047657616]
-position = Vector2(77, 274)
+position = Vector2(-311, -61)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=599725568]
 
 [node name="Jugador" type="Node2D" parent="." unique_id=849974471]
-position = Vector2(150, 500)
+position = Vector2(-238, 165)
 
 [node name="PuntoInicial" type="Marker2D" parent="Jugador" unique_id=565416477]
 
 [node name="Cartas" type="Node2D" parent="Jugador" unique_id=1706196529]
 
 [node name="CPU" type="Node2D" parent="." unique_id=216308675]
-position = Vector2(150, 120)
+position = Vector2(-251, -215)
 
 [node name="PuntoInicial" type="Marker2D" parent="CPU" unique_id=1196424025]
 
 [node name="Cartas" type="Node2D" parent="CPU" unique_id=753527123]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=824195013]
